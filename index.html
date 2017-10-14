@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="flexContainer blueBackground">
+  	<ul class="nav flexItem flexStart">
+  	  <li><a href="#">RT Designs</a></li>
+  	</ul>
+  	<ul class="nav flexContainer flexEnd">
+  	  <li><a href="#">Home</a></li>
+  	  <li><a href="#">About</a></li>
+  	  <li><a href="#">Services</a></li>
+  	  <li><a href="#">Contact</a></li>
+  	</ul>
+  </nav>
+
+  <section id="home">
+  	<div class="flexContainer flexCenter itemCenter fullHeight centerImage" style="position: relative;">
+  	  <div class="flexContainer flexCenter itemCenter fullHeight">
+  	  	<a href="index.html" class="myButton">Return Home</a>
+  	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon class="svg--sm" fill="#c3e8c7" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+          <polygon class="svg--lg" fill="#c3e8c7" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+        </svg>
+  	  </div>
+  	</div>
+
+  </section>
+
+  <section id="services">
+    <div class="row">
+      <div class="flexContainer tanBackground">
+  	    <i class="flexItem services flexStart flex-wrap fa fa-tachometer" aria-hidden="true"></i>
+  	    <i class="flexItem services flexStart flex-wrap fa fa-camera-retro" aria-hidden="true"></i>
+  	    <i class="flexItem services flexStart flex-wrap fa fa-line-chart" aria-hidden="true"></i>
+  	  </div>
+    </div>
+    <div class="row">
+  	  <div class="flexContainer tanBackground">
+  	    <p class="flexItem services flexStart flex-wrap" style="font-size: 50px">Web Development</p>
+  	    <p class="flexItem services flexCenter flex-wrap" style="font-size: 50px">Photography/Graphic Design</p>
+  	    <p class="flexItem services flexEnd flex-wrap" style="font-size: 50px">Search Engine Optimization</p>
+  	  </div>
+    </div>
+  </section>
+
+  <section id="about">
+  	<div class="row">
+  	  <div class="flexContainer blueBackground">
+  	    <div class="flexItem bigitem">
+  	      <img src="images/mockup2.png">
+  	    </div>
+  	    <div class="flexItem smallitem">
+  	      <h2 style="text-align: center; font-size: 50px; color: #ffffff">Check Us Out!</h2>
+  	      <p style="font-size: 30px; text-align: center; color: #ffffff;">RT Designs is a full-service website design and development firm. We specialize in Bootstrap, Flexbox, Muse and even Wordpress. We offer a huge selection of layouts to suit your business needs and all of our site are 100% responsive.</p>
+  	    </div>
+  	  </div>
+  	</div>
+  	<div class="row">
+  	  <div class="flexContainer tanBackground">
+        <div class="flexItem bigitem">
+  	      <h2 style="text-align: center; font-size: 50px; color: #ffffff">Check Us Out!</h2>
+  	      <p style="font-size: 30px; text-align: center; color: #ffffff;">RT Designs is a full-service website design and development firm. We specialize in Bootstrap, Flexbox, Muse and even Wordpress. We offer a huge selection of layouts to suit your business needs and all of our site are 100% responsive.</p>
+  	    </div>
+  	    <div class="flexItem smallItem">
+  	      <img id="phone" src="images/phone.png">
+  	    </div>
+  	  </div>	
+  	</div>
+  	<div class="row">
+  	  <div class="flexContainer blueBackground">
+  	    <div class="flexItem bigitem">
+  	      <img src="images/mockup2.png">
+  	    </div>
+  	    <div class="flexItem smallitem">
+  	      <h2 style="text-align: center; font-size: 50px; color: #ffffff">Check Us Out!</h2>
+  	      <p style="font-size: 30px; text-align: center; color: #ffffff;">RT Designs is a full-service website design and development firm. We specialize in Bootstrap, Flexbox, Muse and even Wordpress. We offer a huge selection of layouts to suit your business needs and all of our site are 100% responsive.</p>
+  	    </div>
+  	  </div>
+  	</div>
+  </section>
+
+  <section id="Contact">
+    <div class="row">
+      <div class="flexContainer tanBackground flexCenter">
+  	  	<h1 style="color: #ffffff; font-size: 50px; text-align: center; text-decoration-line: underline;">Contact Us</h1>
+  	  </div>
+  	<div class="row flexCenter">
+  	  <div class="flexContainer tanBackground">
+  	    <form id="form" class="topBefore">	
+		  <input id="name" type="text" placeholder="NAME">
+		  <input id="email" type="text" placeholder="E-MAIL">
+		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+          <input id="submit" type="submit" value="GO!">
+        </form>
+  	  </div>
+  	</div>
+  </section>
+
+</body>
+</html>
