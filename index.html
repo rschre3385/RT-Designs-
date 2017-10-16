@@ -4,24 +4,25 @@
   <title>Flexbox</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
   <nav class="flexContainer blueBackground">
   	<ul class="nav flexItem flexStart">
-  	  <li><a href="#">RT Designs</a></li>
+  	  <li><a href="#home"><img src="images/RTInc1.png" style="height: 200px; width: 200px; margin-top: -60px; margin-left: -50px;"></a></li>
   	</ul>
   	<ul class="nav flexContainer flexEnd">
-  	  <li><a href="#">Home</a></li>
-  	  <li><a href="#">About</a></li>
-  	  <li><a href="#">Services</a></li>
-  	  <li><a href="#">Contact</a></li>
+  	  <li id="home1"><a href="#home">Home</a></li>
+  	  <li id="about1"><a href="#about">About</a></li>
+  	  <li id="services1"><a href="#services">Services</a></li>
+  	  <li id="contact1"><a href="#contact">Contact</a></li>
   	</ul>
   </nav>
 
   <section id="home">
   	<div class="flexContainer flexCenter itemCenter fullHeight centerImage" style="position: relative;">
   	  <div class="flexContainer flexCenter itemCenter fullHeight">
-  	  	<a href="index.html" class="myButton">Return Home</a>
+  	  	<a href="#contact" class="myButton">Get in Touch</a>
   	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon class="svg--sm" fill="#c3e8c7" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
           <polygon class="svg--lg" fill="#c3e8c7" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
@@ -32,6 +33,11 @@
   </section>
 
   <section id="services">
+    <div class="row" style="text-align: center; font-size: 40px; color: #ffffff">
+      <div class="flexContainer tanBackground flexCenter">
+        <h1><a href="#">Features</a></h1>
+      </div>
+    </div>
     <div class="row">
       <div class="flexContainer tanBackground">
   	    <i class="flexItem services flexStart flex-wrap fa fa-tachometer" aria-hidden="true"></i>
@@ -41,10 +47,24 @@
     </div>
     <div class="row">
   	  <div class="flexContainer tanBackground">
-  	    <p class="flexItem services flexStart flex-wrap" style="font-size: 50px">Web Development</p>
-  	    <p class="flexItem services flexCenter flex-wrap" style="font-size: 50px">Photography/Graphic Design</p>
-  	    <p class="flexItem services flexEnd flex-wrap" style="font-size: 50px">Search Engine Optimization</p>
+  	    <p class="flexItem services flexStart flex-wrap" style="font-size: 30px">Web Development</p>
+  	    <p class="flexItem services flexCenter flex-wrap" style="font-size: 30px">Photography/Graphic Design</p>
+  	    <p class="flexItem services flexEnd flex-wrap" style="font-size: 30px">Search Engine Optimization</p>
   	  </div>
+    </div>
+    <div class="row">
+      <div class="flexContainer tanBackground">
+        <i class="flexItem services flexStart flex-wrap fa fa-address-card-o" aria-hidden="true"></i>
+        <i class="flexItem services flexStart flex-wrap fa fa-cart-plus" aria-hidden="true"></i>
+        <i class="flexItem services flexStart flex-wrap fa fa-cloud-download" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="flexContainer tanBackground">
+        <p class="flexItem services flexStart flex-wrap" style="font-size: 30px">Web Design</p>
+        <p class="flexItem services flexCenter flex-wrap" style="font-size: 30px">Ecommerce</p>
+        <p class="flexItem services flexEnd flex-wrap" style="font-size: 30px">Web Hosting</p>
+      </div>
     </div>
   </section>
 
@@ -52,7 +72,7 @@
   	<div class="row">
   	  <div class="flexContainer blueBackground">
   	    <div class="flexItem bigitem">
-  	      <img src="images/mockup2.png">
+  	      <img src="images/iphone.png">
   	    </div>
   	    <div class="flexItem smallitem">
   	      <h2 style="text-align: center; font-size: 50px; color: #ffffff">Check Us Out!</h2>
@@ -67,14 +87,14 @@
   	      <p style="font-size: 30px; text-align: center; color: #ffffff;">RT Designs is a full-service website design and development firm. We specialize in Bootstrap, Flexbox, Muse and even Wordpress. We offer a huge selection of layouts to suit your business needs and all of our site are 100% responsive.</p>
   	    </div>
   	    <div class="flexItem smallItem">
-  	      <img id="phone" src="images/phone.png">
+  	      <img src="images/mockup3.png">
   	    </div>
   	  </div>	
   	</div>
   	<div class="row">
   	  <div class="flexContainer blueBackground">
   	    <div class="flexItem bigitem">
-  	      <img src="images/mockup2.png">
+  	      <img src="images/ipad.png">
   	    </div>
   	    <div class="flexItem smallitem">
   	      <h2 style="text-align: center; font-size: 50px; color: #ffffff">Check Us Out!</h2>
@@ -84,7 +104,7 @@
   	</div>
   </section>
 
-  <section id="Contact">
+  <section id="contact">
     <div class="row">
       <div class="flexContainer tanBackground flexCenter">
   	  	<h1 style="color: #ffffff; font-size: 50px; text-align: center; text-decoration-line: underline;">Contact Us</h1>
@@ -92,14 +112,40 @@
   	<div class="row flexCenter">
   	  <div class="flexContainer tanBackground">
   	    <form id="form" class="topBefore">	
-		  <input id="name" type="text" placeholder="NAME">
-		  <input id="email" type="text" placeholder="E-MAIL">
-		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+		      <input id="name" type="text" placeholder="NAME">
+		      <input id="email" type="text" placeholder="E-MAIL">
+		      <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
           <input id="submit" type="submit" value="GO!">
         </form>
   	  </div>
   	</div>
   </section>
 
+  <section id="portfolio" class="blueBackground">
+    <div class="row">
+      <div class="flexContainer flexCenter">
+        <h1 style="color: #ffffff; font-size: 60px">Portfolio</h1>
+      </div>
+      
+    </div>
+  </section> 
+
 </body>
+
+<footer>
+  <div class="row">
+    <div class="flexContainer">
+      <h1 style="margin-bottom: -40px">&copy; 2017 RT-Designs.com</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="flexContainer">
+      <a href="#"><i class="fa fa-github-alt" style="font-size: 40px; padding: 0 12em; padding-bottom: 20px; color: #ffffff;" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-facebook" style="font-size: 40px; padding: 0 0em; padding-bottom: 20px; color: #ffffff;" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-yelp" style="font-size: 40px; padding-right: 5em; padding-bottom: 20px; color: #ffffff;" aria-hidden="true"></i></a> 
+    </div>
+    
+  </div>
+</footer>
+
 </html>
